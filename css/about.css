@@ -1,0 +1,33 @@
+.about-text {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  gap: 20px;
+}
+
+.about-text h2 {
+  font-family: "Clash Display", serif;
+  font-size: 48px;
+  background: linear-gradient(180deg,var(--bg-color) 10%,var(--surface-2));
+  padding: 0 20px;
+  border: 2px solid var(--accent-color);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 30px 80px #8a3cff59;
+}
+
+.about-text p {
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+
+.about-image img {
+  display: flex;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  border-radius: 50px;
+  box-shadow: 0 0 100px #8a3cff6a;
+  border: 5px solid var(--accent-color);
+}
