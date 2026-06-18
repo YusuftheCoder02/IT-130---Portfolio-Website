@@ -96,24 +96,23 @@
     gap: 15px;
 }
 
-.bottom-cards-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-
-}
-
 .top-card {
     background-color: var(--bg-section);
     border: 2px solid var(--border-purple);
     border-radius: 10px;
     padding: 15px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.top-card:hover {
+    background-color: #1a0f3d;
+    border-color: #ff00ff;
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.6);
 }
 
 .top-project {
     display: flex;
     align-items: center;
-    background-color: var(--bg-card);
     padding: 15px 40px;
     border-radius: 10px;
 }
@@ -127,7 +126,9 @@
 #top-logo {
     font-size: 150px;
     color: var(--icon-white);
+    transition: color 0.3s ease;
 }
+
 
 .project-description-top {
     padding: 15px;
@@ -140,20 +141,25 @@
 }
 
 .project-description-top .highlight {
-    background: linear-gradient(90deg,#8d1cef, var(--border-purple));
-    border: var(--border-purple);
+    background: linear-gradient(90deg, #a855f7, #3b82f6);
     width: fit-content;
     padding: 10px;
     border-radius: 10px;
 }
 
+.top-card:hover .project-description-top .highlight {
+    border-color: #1a0f3d;
+}
+
 .project-introduction-top h2 {
     font-size: 38px;
+    transition: color 0.3s ease;
 }
 
 .project-introduction-top p {
     font-size: 18px;
     color: var(--text-muted);
+    transition: color 0.3s ease;
 }
 
 .view-code-button {
@@ -161,9 +167,8 @@
     width: fit-content;
     padding: 10px;
     border-radius: 10px;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
     cursor: pointer;
-
+    text-wrap: nowrap;
 }
 
 .view-code-button a {
@@ -171,16 +176,119 @@
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    color: var(--text-muted);
-    transition: color 0.3s ease;
+    color: var(--text-soft);
     cursor: pointer;
+    transition: color 0.5s ease;
 }
 
 .view-code-button:hover {
-    background-color: var(--accent-purple);
-    border-color: var(--accent-purple-bright);
+    border-color: #a855f7;
+    background-color: #a855f733;
+    box-shadow: 0 0 20px var(--glow-purple);
+    scale: 1.05;
 }
 
 .view-code-button:hover a {
-    color: var(--text-main);
+    color: #ffffff;
+}
+
+.live-demo-button {
+    border: 2px solid #d946ef;
+    width: fit-content;
+    background-color: #d946ef14;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-wrap: nowrap;
+}
+
+.live-demo-button a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #d946ef;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.live-demo-button:hover {
+    border-color: #d946ef;
+    background-color: #d946ef33;
+    box-shadow: 0 0 20px rgba(217, 70, 239, 0.6);
+    scale: 1.05;
+}
+
+.live-demo-button:hover a {
+    color: #ffffff;
+} 
+
+/* Bottom Cards */
+
+.bottom-cards-grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.Project-2, .Project-3 {
+    background-color: var(--bg-section);
+    border: 2px solid var(--border-purple);
+    border-radius: 10px;
+    padding: 15px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Project-2:hover, .Project-3:hover {
+    background-color: #1a0f3d;
+    border-color: #ff00ff;
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.6);
+}
+
+.Project-2-grid, .Project-3-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+    height: 100%;
+}
+
+.project-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color: var(--icon-white);
+    transition: color 0.3s ease;
+}
+
+.project-description {
+    padding: 15px;
+    border-left: 2px solid var(--border-purple);
+    text-align: start;
+}
+
+.project-description-grid {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 15px;
+    height: 100%;
+}
+
+.project-buttons-list {
+    display: flex;
+    gap: 15px;
+}
+
+.project-introduction h2 {
+    font-size: 28px;
+    transition: color 0.3s ease;
+    margin-bottom: 10px;
+    text-wrap: nowrap;
+}
+
+.project-introduction p {
+    font-size: 16px;
+    color: var(--text-muted);
+    transition: color 0.3s ease;
 }
