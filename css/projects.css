@@ -43,13 +43,14 @@
 
 .projects-intro {
     display: grid;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .section-label {
     display: flex;
     align-items: center;
     gap: 15px;
+    margin-bottom: 22px;
 }
 
 .section-label span {
@@ -69,6 +70,7 @@
 
 .projects-intro h1 {
     font-size: 3.5rem;
+    margin-bottom: 10px;
     font-family: 'Satoshi Variable', sans-serif;
     color: var(--text-main);
 }
@@ -80,7 +82,7 @@
 .projects-intro p {
     text-align: start;
     font-size: 18px;
-    color: var(--text-muted);
+    color: var(--text-soft);
     line-height: 1.6;
 }
 
@@ -114,7 +116,6 @@
 .top-project {
     display: flex;
     align-items: center;
-    background-color: var(--bg-card);
     padding: 15px 40px;
     border-radius: 10px;
 }
@@ -141,7 +142,7 @@
 }
 
 .project-description-top .highlight {
-    background: linear-gradient(90deg,#8d1cef, var(--border-purple));
+    background: linear-gradient(90deg, #8d1cef, var(--border-purple));
     border: var(--border-purple);
     width: fit-content;
     padding: 10px;
@@ -223,7 +224,8 @@
     height: 100%;
 }
 
-.Project-2, .Project-3 {
+.Project-2,
+.Project-3 {
     background-color: var(--bg-section);
     border: 2px solid var(--border-purple);
     border-radius: 10px;
@@ -231,12 +233,15 @@
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.Project-2:hover, .Project-3:hover, .top-card:hover {
+.Project-2:hover,
+.Project-3:hover,
+.top-card:hover {
     background-color: var(--bg-card-dark);
     border-color: var(--accent-purple);
 }
 
-.Project-2-grid, .Project-3-grid {
+.Project-2-grid,
+.Project-3-grid {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 25px;
@@ -306,7 +311,8 @@
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.project-summary:hover, .project-focus:hover {
+.project-summary:hover,
+.project-focus:hover {
     background-color: var(--bg-card-dark);
     border-color: var(--accent-purple);
 }
@@ -316,4 +322,31 @@
     grid-template-rows: auto 1fr;
     gap: 15px;
     height: 100%;
+}
+
+.project-stats-intro {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.project-stats-intro i {
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    font-size: 26px;
+    padding: 12px;
+    background-color: #2A0E4D;
+    border: #8B3FE6 solid 2px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-stats-intro h2 {
+    font-size: 25px;
+    font-family: 'Satoshi Variable', sans-serif;
+    color: var(--text-main);
 }

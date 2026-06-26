@@ -26,6 +26,7 @@
 
 .skills-container {
     margin: 25px 0 auto;
+    background-color: var(--bg-main);
     padding: 40px 20px;
 }
 
@@ -314,3 +315,4 @@
     gap: 25px;
     text-align: center;
 }
+
