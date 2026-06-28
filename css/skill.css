@@ -174,13 +174,14 @@
     border: 1px solid var(--accent-purple-dark);
     text-align: center;
     cursor: default;
-    transition: background-color 0.5s ease, border-color 0.5s ease, transform 0.5s ease;
+    transition: background-color 0.5s ease, border-color 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .skill-card:hover {
     border-color: var(--accent-purple-bright);
     background-color: var(--bg-card);
     transform: translateY(-5px);
+    box-shadow: 0 0 20px -4px var(--accent-purple-bright);
 }
 
 .skill-card:hover h3 {
